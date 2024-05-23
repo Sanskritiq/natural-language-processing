@@ -1,0 +1,22 @@
+dataset:
+  en_train_path: Data/train.en.gz
+  en_test_path: Data/test_2016_flickr.en.gz
+  en_val_path: Data/val.en.gz
+  de_train_path: Data/train.de.gz
+  de_test_path: Data/test_2016_flickr.de.gz
+  de_val_path: Data/val.de.gz
+  batch_size: 32
+
+meta:
+  device: cpu
+
+model:
+  embedding_dim: 256
+  n_layers: 2
+  n_heads: 2
+  ff_dim: 512
+  max_len: 100
+  dropout: 0.1
+  src_pad_idx: 0
+  trg_pad_idx: 0
+  num_epochs: 5
